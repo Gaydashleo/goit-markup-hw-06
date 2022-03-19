@@ -464,7 +464,6 @@ p {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--button-text-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -526,13 +525,11 @@ p {
 .customers-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   color: var(--accent-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /*======= OUR CUSTOMERS END =======*/
@@ -588,7 +585,6 @@ p {
 .mail-basement:hover,
 .mail-basement:focus {
   color: var(--accent-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .tel-basement {
   display: block;
@@ -607,7 +603,6 @@ p {
 .tel-basement:hover,
 .tel-basement:focus {
   color: var(--accent-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .footer-social-title {
   margin-bottom: 20px;
@@ -640,14 +635,38 @@ p {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--button-text-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+.footer-email-input {
+  margin-left: 93px;
+}
+.footer-email-title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--footer-social-title-color);
+}
+.email {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2787px;
 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
 /*======= FOOTER END ======= */
 /*======= PORTFOLIO =======  */
 .top-line {
