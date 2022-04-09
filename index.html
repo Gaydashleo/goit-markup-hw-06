@@ -70,20 +70,48 @@
           <button class="button-hero" data-modal-open>Заказать услугу</button>
           <div class="backdrop" data-modal>
             <div class="modal">
-              <a class="modal-close" data-modal-close>
-                <svg class="modal-close-icon" width="30" height="30">
-                  <use href="./images/sprite.svg#close"></use></svg
-              ></a>
+              <button type="button-close" class="modal-close-btn">
+              <svg class="modal-close-icon" width="30" height="30">
+                  <use href="./images/sprite.svg#close"></use>                </svg>
+              </button>
               <form class="contact-form">
                 <b class="modal-title">Оставьте свои данные, мы Вам перезвоним </b>
-                <label class="contact-form-field"></label>
-                <input class="contact-form-input"type="text">
-                <label class="contact-form-field"></label>
-                <input class="contact-form-input"type="tel">
-                <label class="contact-form-field"></label>
-                <input class="contact-form-input"type="email">
-                <label class="contact-form-field"></label>
-                <textarea class="contact-form-message"name="" ></textarea>
+                <label class="contact-form-field">
+                  <span class="modal-text">Имя</span>
+                  <span class="contact-form-input-wrapper">
+                    <input name="user_name" class="contact-form-input"type="text" required>
+                  <svg class="contact-modal-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-modal-name"></use>
+                  </svg></span>
+                </label>
+                <label class="contact-form-field">
+                  <span class="modal-text">Телефон</span>
+                  <dspan class="contact-form-input-wrapper">
+                    <input name="user_tel" class="contact-form-input"type="tel" required>
+                  <svg class="contact-modal-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-modal-tel"></use>
+                  </svg></dspan>
+                </label>
+                <label class="contact-form-field">
+                  <span class="modal-text">Почта</span>
+                  <span class="contact-form-input-wrapper">
+                    <input name="user_email" class="contact-form-input"type="email" required>
+                  <svg class="contact-modal-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-modal--email"></use>
+                  </svg></span>
+                  
+                </label>
+                <label class="contact-form-field">
+                  <span class="modal-text">Комментарий</span>
+                  <textarea name="user_massage" class="contact-form-message" placeholder="Введите текст" ></textarea>
+                </label>
+                <div class="contact-form-checkdox-wrapper">
+                  <input name="accept_policy" type="check-box" class="contact-form-checkbox" required>
+                  <label for="" class="contact-form-checkdox-lable">
+                    Соглашаюсь с рассылкой и принимаю <a href=""Условия договора ></a></label>
+                </div>
+                <button type="submit" class="contact-form-submit-btn">Отправить </button>
+                
               </form>
             </div>
         </div>
